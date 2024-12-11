@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        header {
+            background-color: hotpink;
+            height: 70px;
+            box-shadow: 2px 2px 10px rgb(109, 109, 109);
+        }
+
+        header h1 {
+            margin-left: 20px;
+            margin-top: 10px;
+            font-size: 40px;
+            color: whitesmoke;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        nav ul {
+            display: flex;
+            margin-left: 500px;
+            gap: 50px;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-top: 20px;
+            font-size: 18px;
+            color: aliceblue;
+        }
+
+        ul li a {
+            text-decoration: none;
+            margin-top: 7px;
+            color: white;
+            font-family: "Poppins", serif;
+        }
+
+        ul i {
+            color: white;
+            margin-top: 24px;
+        }
+
+        ul li a:hover {
+            border: 1px solid #FFF9BF;
+            height: 20px;
+            width: 40px;
+        }
+
+        .boxs {
+            height: 500px;
+            width: 90%;
+            background-color: whitesmoke;
+            margin-left: 80px;
+            position: relative;
+            
+        }
+
+        .boxs .box1 {
+            height: 300px;
+            width: 400px;
+            background: linear-gradient(to right, #000000, #FF4191);
+            border-radius: 15px;
+            position: absolute;
+            left: 100px;
+            top: 120px;
+            z-index: 1;
+            
+    }
+
+        .boxs .box2 {
+            height: 400px;
+            width: 500px;
+            background-color: black;
+            border-radius: 15px;
+            position: absolute;
+            left: 400px;
+            z-index: 3;
+            
+
+        }
+
+        .boxs .box3 {
+            height: 300px;
+            width: 400px;
+            background: linear-gradient(to left, #000000, #FF4191);
+            border-radius: 15px;
+            position: absolute;
+            left: 800px;
+            top: 120px;
+            z-index: 2;
+
+        }
+
+        .boxs .box1 h3 {
+            color: #FFF9BF;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 25px;
+
+        }
+
+        .boxs .box1 p {
+            color: #FFF9BF;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .boxs .box2 h2 {
+            color: #FF4191;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 50px;
+
+        }
+
+        .boxs .box2 p {
+            color: #FF4191;
+            text-align: center;
+            font-size: 30px;
+
+        }
+
+        .boxs .box3 h3 {
+            color: #FFF9BF;
+            text-align: center;
+            margin-top: 100px;
+            font-size: 25px;
+
+        }
+
+        .boxs .box3 p {
+            color: #FFF9BF;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .boxs h1 {
+            text-align: center;
+            font-size: 40px;
+
+        }
+
+        .bestsell {
+            height: 400px;
+            width: 90%;
+            background: linear-gradient(to right, #D2649A, #F6FAB9);
+            margin-top: 100px;
+            margin-left: 60px;
+            border-radius: 15px;
+            display: flex;
+
+
+        }
+
+        .bestsell .images {
+            border: 1px solid grey;
+            height: 340px;
+            width: 225px;
+            background-color: white;
+            border-radius: 18px;
+            padding-left: 15px;
+            padding-top: 10px;
+            margin-left: 40px;
+            margin-top: 20px;
+            box-shadow: 5px 5px 5px rgb(145, 143, 143);
+            border: none;
+
+
+
+        }
+
+        .bestsell .images img {
+            height: 250px;
+            width: 200px;
+        }
+
+        .bestsell .images p {
+            text-align: center;
+        }
+
+        .bestsell h2 {
+            margin-left: 40px;
+            margin-top: 180px;
+            font-size: 30px;
+        }
+        .bestsell .arr {
+            border: 1px solid black;
+            height: 70px;
+            width: 70px;
+            background-color: white;
+            margin-top: 180px;
+            margin-left: 10px;
+            border-radius: 50px;
+            border: none;
+            
+        }
+        .bestsell .arr i{
+            color: #000000;
+            font-size: 20px;
+            padding: 25px;
+        }
+        .brands{
+            border: 1px solid gray;
+            height: 450px;
+            width: 90%;
+            background-color:rgb(247, 247, 247);
+            margin-top: 80px;
+            margin-left: 50px;
+            border-radius: 20px;
+            border: none;
+            display: flex;
+            gap: 20px;
+
+        }
+        .brands .brandname{
+            border: 1px solid black;
+            height: 350px;
+            width: 250px;
+            border-radius: 10px;
+            border: none;
+            margin-top: 20px;
+            margin-left: 20px;
+            
+        }
+        .brands .brandname img{
+            height: 350px;
+            width: 250px;
+
+        }
+        .brands .brandname .name{
+            border: 1px solid black;
+            height: 70px;
+            width: 170px;
+            
+            border-radius: 20px;
+            margin-left: 40px;
+            border: none;
+            position: relative;
+            bottom: 30px;
+            
+            
+        }
+        .brandname .name img{
+            height: 70px;
+            width: 150px;
+            padding: 10px;
+            
+        }
+        .brands h2{
+            margin-left: 30px;
+            margin-top: 200px;
+            font-size: 30px;
+        }
+        .brandname img:hover{
+            /* height: 400px; */
+        width:300px ;
+
+        }
+        .test img{
+            height: 200px;
+            position: relative;
+            left: 64.7%;
+            bottom: 10px;
+        } 
+        footer{
+    height: 500px;
+    width: 1410px;
+    background-color:black;
+    margin-top: 30px;
+    padding:50px;
+}
+.foot{
+    display: flex;
+}
+.foot h5{
+    font-size: 20px;
+    font-family: "Poppins", serif;  
+    color:hotpink;
+    margin-left: 7px;
+}
+ .foot a{
+    display:block;
+    text-decoration: none;
+    color: #FFF9BF;
+    font-size: 18px;
+    font-family: "Poppins", serif; 
+    padding: 7px; 
+
+}
+.foot p{
+    color: #FFF9BF;
+    font-size: 18px;
+    font-family: "Poppins", serif; 
+    padding: 7px;
+
+}
+.foot .Aboutus{
+    margin-left: 100px;
+    
+
+}
+.foot .help{
+    margin-left: 90px;
+}
+.foot .links{
+    margin-left: 100px;
+}
+.media{
+    margin-left: 220px;
+    color: #FFF9BF;
+    font-size: 50px;
+    
+}
+.media i{
+    padding: 10px;
+    color:#FFF9BF;
+    
+}
+.name h1{
+    margin-left: 600px;
+    margin-top: 50px;
+    
+  color: #FF76CE;
+  font-size: 50px;
+}
+.name p{
+    margin-left: 570px;
+    margin-top: 10px;
+    color:gray;
+}
+
+        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>LensKart</h1>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./login.html">Login</a></li>
+                <li><a href="./branches.html">Branches</a></li>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="boxs">
+        <h1>Services</h1>
+        <div class="box1">
+            <h3>Lenzkart</h3>
+            <p>Home Eye Test</p>
+        </div>
+        <div class="box2">
+            <h2>Lenzkart</h2>
+            <p>Smart Glasses</p>
+            <p>GEN2</p>
+
+        </div>
+        <div class="box3">
+            <h3>Lenzkart</h3>
+            <p>Smart Glasses</p>
+        </div>
+    </div>
+    <div class="bestsell">
+        <h2> Our Best Selling</h2>
+        <div class="images">
+            <img src="./images/sports.jpg" alt="" srcset="">
+            <p>Sports Glasses starting from</p>
+            <p>1250</p>
+        </div>
+        <div class="images">
+            <img src="./images/kidss.jpg" alt="" srcset="">
+            <p>Kids Glasses starting from</p>
+            <p>1000</p>
+        </div>
+        <div class="images">
+            <img src="./images/round.jpg" alt="" srcset="">
+            <p>Rounded Glasses starting from</p>
+            <p>1500</p>
+        </div>
+        <div class="images">
+            <img src="./images/square.jpg" alt="" srcset="">
+            <p>Square Glasses starting from</p>
+            <p>1500</p>
+        </div>
+        <div class="arr">
+            <i class="fa-solid fa-arrow-right"></i>
+        </div>
+    </div>
+    <div class="brands">
+       
+        <div class="brandname">
+            <img src="./images/vogue.jpg" alt="">
+            <div class="name">
+                <img src="./images/name2.png" alt="">
+            </div>
+        </div>
+        <div class="brandname">
+            <img src="./images/titan.jpg" alt="">
+            <div class="name">
+                <img src="./images/name11.png" alt="">
+            </div>
+        </div>
+        <div class="brandname">
+            <img src="./images/fasttrack.jpg" alt="">
+            <div class="name">
+                <img src="./images/name3.png" alt="">
+            </div>
+        </div>
+        <div class="brandname">
+            <img src="./images/tommy-hilfiger-featured-image.jpg" alt="">
+            <div class="name">
+                <img src="./images/name4.png" alt="">
+            </div>
+        </div>
+        <h2>Shop By Brands</h2>
+    </div>
+    <footer>
+        <div class="foot">
+            <div class="services">
+                <h5>Services</h5>
+                <a href="">Store Locator</a>
+                <a href="">Buying Guide</a>
+                <a href="">Frame Size</a>
+            </div>
+            <div class="Aboutus">
+                <h5>About Us</h5>
+                <a href="">Refer and Earn</a>
+                <a href="">Coupon Code</a>
+            </div>
+            <div class="links">
+            <h5>USEFUL LINKS</h5>
+                 <a href=""> Store Locations</a>
+                 <a href="">Business Partner</a>
+                 <a href=""> EyeX Compatible App</a>
+                 <a href="">Hearing Aids</a>
+                 <a href="">Exercise Your Rights</a>
+                 <a href="">Glossary</a>
+            </div>
+            <div class="help">
+                <h5>Help</h5>
+                <p>FAQs</p>
+            </div>
+            <div class="media">
+                <h5>Follow Us On</h5>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            
+        </div>
+        <div class="name">
+            <h1>Lenzkart</h1>
+            <p>@ 2024 Lenzkart all rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>
